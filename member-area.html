@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員專區 - 電腦工仿</title>
+    <link rel="stylesheet" href="member.css"> <!-- 這裡可以加入你的CSS -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="nav-branding">電腦工仿</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="latest-news.html" target="_blank" class="nav-link">最新消息</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-us.html" target="_blank" class="nav-link">關於我們</a>
+                </li>
+                <li class="nav-item">
+                    <a href="store-location.html" target="_blank" class="nav-link">門市據點</a>
+                </li>
+                <li class="nav-item">
+                    <a href="member-area.html" target="_blank" class="nav-link">會員專區</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>登入會員</h2>
+            <form>
+                <label for="username">使用者名稱：</label>
+                <input type="text" id="username" name="username" placeholder="請輸入你的使用者名稱" required>  <!--type="text"：表示這是一個文本輸入框，允許用戶輸入普通文字。
+                                                                            type="password"：表示這是一個密碼輸入框，輸入的字符將以星號或點的形式顯示，增加了密碼的隱私性。-->
+                <br>
+                <label for="password">密碼：</label>                            <!--for 屬性增強了可用性，使得點擊標籤時能夠直接聚焦到相應的輸入框，這對於使用輔助技術的用戶（如螢幕閱讀器使用者）尤為重要。
+                                                                                type 屬性確定了用戶輸入數據的格式，使得用戶界面更清晰並提供適合的輸入選項。-->
+                <input type="password" id="password" name="password" placeholder="請輸入你的密碼"required>
+                <br>
+                <button type="submit">登入</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>註冊新會員</h2>
+            <form>   <!--<form> 標籤是HTML中用來創建表單的元素，它的作用是收集用戶輸入的數據，並將這些數據發送到伺服器或進行某種處理-->
+                <label for="new-username">使用者名稱：</label>
+                <input type="text" id="new-username" name="new-username"placeholder="請輸入你的使用者名稱" required>
+                <br>
+                <label for="new-password">密碼：</label>
+                <input type="password" id="new-password" name="new-password" placeholder="請輸入你的密碼"required>
+                <br>
+                <button type="submit">註冊</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>copyright 2024 電腦工仿. 保留所有權利.</p>
+    </footer>
+<script src="member-area.js"></script>
+</body>
+</html>

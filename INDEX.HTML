@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入Google字體，這裡用於顯示icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!-- 引入SwiperJS的CSS，提供Swiper功能所需的樣式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>電腦工仿</title>
+    <!-- 自定義CSS檔案，放置你自己撰寫的樣式 -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="nav-branding">電腦工仿</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="latest-news.html" target="_blank" class="nav-link">最新消息</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-us.html" target="_blank" class="nav-link">關於我們</a>
+                </li>
+                <li class="nav-item">
+                    <a href="store-location.html" target="_blank" class="nav-link">門市據點</a>
+                </li>
+                <li class="nav-item">
+                    <a href="member-area.html" target="_blank" class="nav-link">會員專區</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+         <!-- 產品新聞區塊 -->
+         <section class="news">
+            <h2>電腦工仿</h2>
+            <p></p>
+            <p><a>Make the best for the best</a></p>
+        </section>
+
+        <!-- 加入一個Swiper輪播區域 -->
+        <section class="add">
+            <div class="container swiper">
+                <!-- 卡片列表容器，這裡包含所有卡片 -->
+                <div class="card-wrapper">
+                    <!-- SwiperJS的主要容器，.swiper-wrapper裡面放每個滑動的項目 -->
+                    <ul class="card-list swiper-wrapper">
+                        <!-- 每個li是一個Swiper滑動項目 -->
+                        <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <!-- 每張卡片的圖片 -->
+                            <img src="https://i.pinimg.com/enabled_hi/564x/8a/85/ea/8a85eaca56ea34bc45131dfa687eb730.jpg" alt="hover" class="card-image">
+                            <p class="badge first">First</p>
+                            <!-- 卡片標題 -->
+                            <h2 class="card-title">作品簡介</h2>
+                            <!-- 前進按鈕，帶有圖標 -->
+                            <button  class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>  
+                        </li>
+                        <!-- 重複的卡片項目，這裡只需改變圖片和文字 -->
+                        <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://i.pinimg.com/736x/8e/a0/0d/8ea00dda989ac61584c6a526573386db.jpg" alt="hover" class="card-image">
+                            <p class="badge second">Second</p>
+                            <h2 class="card-title">作品簡介</h2>
+                            <button  class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>  
+                        </li>
+                        <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="https://i.pinimg.com/736x/6f/a5/5a/6fa55ac2a998f745adcde52ceee3637b.jpg" alt="hover" class="card-image">
+                            <p class="badge third">Third</p>
+                            <h2 class="card-title">作品簡介</h2>
+                            <button  class="card-button material-symbols-rounded">arrow_forward</button>
+                        </a>  
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="https://i.pinimg.com/736x/18/d3/66/18d3663a7b431d459b5574be17625e61.jpg" alt="hover" class="card-image">
+                                <p class="badge fourth">Fourth</p>
+                                <h2 class="card-title">作品簡介</h2>
+                                <button  class="card-button material-symbols-rounded">arrow_forward</button>
+                            </a>  
+                        </li>
+                    </ul>
+                    <!-- Swiper 分頁點 -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Swiper 前一頁和下一頁按鈕 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <!-- 引入SwiperJS腳本 -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- 自定義SwiperJS的初始化腳本 -->
+        <script src="swiper.js"></script>
+
+       
+        <!-- 產品分類區塊 -->
+        <section class="product">
+            <h2>產品分類</h2>
+            <div class="container">
+                <img src="https://www.sanjing3c.com.tw/data/images/202210/CAAS43.jpg" alt="hover">
+                <a href="https://24h.pchome.com.tw/activity/campaign/C349237177?banner=new24_block_h4" target="_blank">
+                    <h3>超級電腦</h3>
+                </a>
+                <p>最新配備<br>讓你體驗你從未有過的體驗</p>
+            </div>
+            <div class="high">
+                <img src="https://cf.shopee.tw/file/2349247cd2d7ec1768d8252905c217d0" alt="hover">
+                <a href="https://24h.pchome.com.tw/activity/campaign/C349237177?banner=new24_block_h4" target="_blank">
+                    <h3>高級電腦</h3>
+                </a>
+                <p>最新配備<br>兼具電競與文書電腦</p>
+            </div>
+            <div class="m">
+                <img src="https://cf.shopee.tw/file/7388ff5e47a84873c919777ed2ed47b5" alt="hover">
+                <a href="https://24h.pchome.com.tw/activity/campaign/C349237177?banner=new24_block_h4" target="_blank">
+                    <h3>中級電腦</h3>
+                </a>
+                <p>最新配備<br>家用電腦</p>
+            </div>
+        </section>
+        
+        <section class="services">
+            <h4>服務項目:</h3>
+                <div class="container">
+                    <img src="https://i.pinimg.com/564x/74/96/6e/74966ed84654bc111667215772cb6bfd.jpg" alt="hover">
+                    <h3>組裝電腦</h3>
+                    <p>專業細心的技術<br>請放心交給我們</p>
+                </div>
+                <div class="container">
+                    <img src="https://i.pinimg.com/564x/42/07/0f/42070f285f81cea274142e1734e7855b.jpg" alt="hover">
+                    <h3>販售電腦</h3>
+                    <p>新機陸續推出<br>商品應有盡有</p>
+                </div>
+        </section>
+        <!-- 電子報訂閱區塊 -->
+        <section class="newsletter">
+
+            <p>歡迎訂閱電腦工仿電子報</p>
+            <form>
+                <input type="email" placeholder="請輸入你的Email" required>
+                <button type="submit">送出</button>
+            </form>
+            
+            <div class="contact-info">
+                <h4><a href="mailto:4109029001@gmail.com">📧 chenchen931222@gmail.com</a></h4> <!--Unicode符號-->
+                <h4><a href="tel:+0908957957">📞 0908-957-957</a></h4>
+                <h4><a href="https://maps.google.com/?q=25.0330,121.5654" target="_blank" >🔍 電腦工仿(本店位置)</a></h4>  
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>copyright 2023 reserved.</p>
+    </footer>
+
+    <!-- 引入自定義的JavaScript腳本 -->
+    <script src="INDEX.js"></script>
+</body>
+</html>
